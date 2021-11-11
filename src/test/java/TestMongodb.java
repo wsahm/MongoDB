@@ -32,6 +32,7 @@ public class TestMongodb {
     public void getCollection(){
         mongoDatabase=MongoUtils.getMongoConn();
 //        获取数据库成员列表
+
         MongoIterable<String> listCollectionNames=mongoDatabase.listCollectionNames();
         for (String collectionName:
              listCollectionNames) {
